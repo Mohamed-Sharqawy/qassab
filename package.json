@@ -1,0 +1,9 @@
+{
+  "name": "qassab-kuwait",
+  "version": "1.0.0",
+  "description": "Kuwait Butcher Landing Page",
+  "scripts": {
+    "dev": "npx live-server",
+    "start": "npx serve ."
+  }
+}
