@@ -11,6 +11,24 @@
 
     gtag('config', 'AW-18398679267');
   </script>
+
+  <!-- Event snippet for Contact conversion page -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18398679267/YTJ3CKrIl-QcEOOhlsVE',
+        'value': 1.0,
+        'currency': 'EGP',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>قصاب الكويت | قصاب متنقل يصلك أينما كنت - ذبح وتوصيل 24 ساعة</title>
@@ -2012,7 +2030,7 @@
             والتغليف وفق أعلى معايير الذبح الحلال، على مدار ٢٤ ساعة.
           </p>
           <div class="hero-ctas">
-            <a href="https://wa.me/96566714788" class="btn btn-primary" target="_blank" rel="noopener">
+            <a href="https://wa.me/96566714788" class="btn btn-primary" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M17.5 14.4c-.3-.1-1.7-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.3-1.4 8.7 8.7 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.4c.1-.2 0-.3 0-.5s-.7-1.6-1-2.2-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4C6.8 8 6.3 8.8 6.3 10s.9 2.8 1 3 1.8 2.8 4.4 3.9c2.6 1.1 2.6.7 3.1.7s1.6-.6 1.8-1.3.2-1.2.2-1.3-.1-.2-.3-.3z" />
@@ -2412,7 +2430,7 @@
                 </svg>
                 <div>
                   <strong data-en="Phone">الهاتف</strong>
-                  <a href="tel:+96566714788" dir="ltr">+965 6671 4788</a>
+                  <a href="tel:+96566714788" dir="ltr" onclick="return gtag_report_conversion(this.href);">+965 6671 4788</a>
                 </div>
               </div>
               <div class="contact-item">
@@ -2424,7 +2442,7 @@
                 </svg>
                 <div>
                   <strong data-en="WhatsApp">واتساب</strong>
-                  <a href="https://wa.me/96566714788" target="_blank" rel="noopener" dir="ltr">+965 6671 4788</a>
+                  <a href="https://wa.me/96566714788" target="_blank" rel="noopener" dir="ltr" onclick="return gtag_report_conversion(this.href);">+965 6671 4788</a>
                 </div>
               </div>
               <div class="contact-item">
@@ -2463,7 +2481,7 @@
             </div>
 
             <div class="hero-ctas" style="margin-top:2rem;">
-              <a href="https://wa.me/96566714788" class="btn btn-primary" target="_blank" rel="noopener">
+              <a href="https://wa.me/96566714788" class="btn btn-primary" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">
                 <span data-en="Chat on WhatsApp">تواصل عبر واتساب</span>
               </a>
               <a href="https://www.instagram.com/qsbtht/" class="btn btn-outline-dark" target="_blank" rel="noopener">
@@ -2529,8 +2547,8 @@
         <div>
           <h4 data-en="Contact">التواصل</h4>
           <ul>
-            <li><a href="tel:+96566714788" dir="ltr">+965 6671 4788</a></li>
-            <li><a href="https://wa.me/96566714788" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a></li>
+            <li><a href="tel:+96566714788" dir="ltr" onclick="return gtag_report_conversion(this.href);">+965 6671 4788</a></li>
+            <li><a href="https://wa.me/96566714788" target="_blank" rel="noopener" data-en="WhatsApp" onclick="return gtag_report_conversion(this.href);">واتساب</a></li>
             <li><a href="https://www.instagram.com/qsbtht/" target="_blank" rel="noopener"
                 data-en="Instagram">انستقرام</a></li>
             <li><span data-en="All areas of Kuwait">جميع مناطق الكويت</span></li>
