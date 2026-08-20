@@ -384,6 +384,8 @@ nav.primary-nav a:hover {
 
 .about-media img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
