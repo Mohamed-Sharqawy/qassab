@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18398679267"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18398679267');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفحة غير موجودة | قصاب الكويت</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#FF5F6D">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FF5F6D'/%3E%3Cstop offset='1' stop-color='%23FFC371'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23FFFFFF' font-family='Georgia,serif'%3EQ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>@import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');</style>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-section {
+      padding: 180px 20px 100px;
+      text-align: center;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .error-section h1 {
+      font-size: 5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .error-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .error-section p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: var(--text-light);
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ============ HEADER ============ -->
+  <header>
+    <div class="container nav-wrap">
+      <a href="/" class="logo" aria-label="قصاب الكويت">
+        <span class="logo-mark" aria-hidden="true">ق</span>
+        <span class="logo-text">
+          <span class="brand-word" data-en="Qassab Al Kuwait">قصاب الكويت</span>
+          <small data-en="Fresh Meat, Daily">لحم طازج، يوميًا</small>
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="التنقل الرئيسي">
+        <a href="/" data-en="Home">الرئيسية</a>
+        <a href="/mobile-butcher" data-en="Mobile Butcher">قصاب متنقل</a>
+        <a href="/home-slaughter" data-en="Home Slaughter">ذبح منزلي</a>
+        <a href="/slaughtered-sheep" data-en="Slaughtered Sheep">ذبائح</a>
+        <a href="/delivery" data-en="Delivery">توصيل</a>
+        <a href="/contact" data-en="Contact">تواصل معنا</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch to English">EN</button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav"
+          aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="error-section">
+      <div class="container">
+        <h1>404</h1>
+        <h2 data-en="Page Not Found">الصفحة غير موجودة</h2>
+        <p data-en="The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.">عذراً، الصفحة التي تبحث عنها غير موجودة أو ربما تم نقلها.</p>
+        <div class="hero-ctas" style="justify-content: center; margin-top: 2rem;">
+          <a href="/" class="btn btn-primary" data-en="Back to Home">العودة للرئيسية</a>
+          <a href="/contact" class="btn btn-outline" data-en="Contact Us">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="margin-top: 2rem;">
+        <span data-en="© 2026 Qassab Al Kuwait. All rights reserved.">© ٢٠٢٦ قصاب الكويت. جميع الحقوق محفوظة.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      // ---------- Language toggle ----------
+      var htmlEl = document.documentElement;
+      var langBtn = document.getElementById('langSwitch');
+      var current = 'ar';
+
+      var textNodes = document.querySelectorAll('[data-en]');
+      textNodes.forEach(function (el) {
+        if (!el.hasAttribute('data-ar')) { el.setAttribute('data-ar', el.textContent); }
+      });
+
+      function setLang(lang) {
+        current = lang;
+        htmlEl.setAttribute('lang', lang);
+        htmlEl.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        langBtn.textContent = lang === 'ar' ? 'EN' : 'AR';
+        langBtn.setAttribute('aria-label', lang === 'ar' ? 'Switch to English' : 'التبديل إلى العربية');
+
+        textNodes.forEach(function (el) {
+          el.textContent = lang === 'ar' ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+        });
+
+        document.title = lang === 'ar'
+          ? 'الصفحة غير موجودة | قصاب الكويت'
+          : 'Page Not Found | Qassab Al Kuwait';
+      }
+
+      if (langBtn) {
+        langBtn.addEventListener('click', function () {
+          setLang(current === 'ar' ? 'en' : 'ar');
+        });
+      }
+
+      // ---------- Mobile nav ----------
+      var navToggle = document.getElementById('navToggle');
+      var primaryNav = document.getElementById('primaryNav');
+      if (navToggle && primaryNav) {
+        navToggle.addEventListener('click', function () {
+          var isOpen = primaryNav.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          navToggle.textContent = isOpen ? '✕' : '☰';
+        });
+        primaryNav.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            primaryNav.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.textContent = '☰';
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
