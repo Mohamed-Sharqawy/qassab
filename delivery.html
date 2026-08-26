@@ -23,7 +23,7 @@
     gtag('event', 'conversion', {
         'send_to': 'AW-18398679267/YTJ3CKrIl-QcEOOhlsVE',
         'value': 1.0,
-        'currency': 'EGP',
+        'currency': 'KWD',
         'event_callback': callback
     });
     return false;
@@ -43,7 +43,7 @@
   <meta name="geo.placename" content="Kuwait">
   <meta name="geo.position" content="29.3759;47.9774">
   <meta name="ICBM" content="29.3759, 47.9774">
-  <link rel="canonical" href="https://www.qassabalkuwait.com/delivery">
+  <link rel="canonical" href="https://www.kuwait-butcher.online/delivery">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -52,21 +52,20 @@
   <meta property="og:description"
     content="خدمة توصيل ذبائح جاهزة ولحوم طازجة في الكويت. توصيل عبر سيارات مبردة لجميع المناطق. التزام بالمواعيد وجودة عالية. اطلب ذبيحتك مع التوصيل الآن.">
   <meta property="og:image"
-    content="https://commons.wikimedia.org/wiki/Special:FilePath/Meat_on_hooks_in_butcher_shop.jpg?width=1200">
+    content="https://www.kuwait-butcher.online/images/hero-1600.webp">
   <meta property="og:locale" content="ar_KW">
   <meta property="og:locale:alternate" content="en_KW">
-  <meta property="og:url" content="https://www.qassabalkuwait.com/delivery">
+  <meta property="og:url" content="https://www.kuwait-butcher.online/delivery">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="توصيل ذبائح ولحوم الكويت | سيارات مبردة لجميع المناطق">
   <meta name="twitter:description" content="خدمة توصيل ذبائح جاهزة ولحوم طازجة في الكويت. توصيل عبر سيارات مبردة لجميع المناطق. التزام بالمواعيد وجودة عالية. اطلب ذبيحتك مع التوصيل الآن.">
   <meta name="twitter:image"
-    content="https://commons.wikimedia.org/wiki/Special:FilePath/Meat_on_hooks_in_butcher_shop.jpg?width=1200">
+    content="https://www.kuwait-butcher.online/images/hero-1600.webp">
 
-  <!-- Favicon (inline SVG, zero extra request) -->
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FF5F6D'/%3E%3Cstop offset='1' stop-color='%23FFC371'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23FFFFFF' font-family='Georgia,serif'%3EQ%3C/text%3E%3C/svg%3E">
+  <!-- Favicon -->
+  <link rel="icon" href="Icon.png" type="image/png">
 
   <!-- Performance: connect early to the origins we actually fetch from -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,15 +80,22 @@
 {
   "@context": "https://schema.org",
   "@type": "Butcher",
+  "@id": "https://www.kuwait-butcher.online/#butcher",
   "name": "Qassab Al Kuwait",
   "alternateName": "قصاب الكويت",
-  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Meat_on_hooks_in_butcher_shop.jpg",
-  "url": "https://www.qassabalkuwait.com/",
+  "description": "قصاب الكويت الأول - خدمة قصاب متنقل، ذبح منزلي شرعي، ذبائح طازجة وتوصيل لجميع مناطق الكويت على مدار 24 ساعة",
+  "slogan": "لحم طازج، يوميًا",
+  "image": "https://www.kuwait-butcher.online/images/hero-1600.webp",
+  "logo": "https://www.kuwait-butcher.online/images/hero-1600.webp",
+  "url": "https://www.kuwait-butcher.online/",
   "telephone": "+965-66714788",
   "priceRange": "KWD",
+  "currenciesAccepted": "KWD",
+  "paymentAccepted": "Cash, KNET, Credit Card",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Kuwait City",
+    "addressRegion": "Capital",
     "addressCountry": "KW"
   },
   "geo": {
@@ -97,15 +103,28 @@
     "latitude": 29.3759,
     "longitude": 47.9774
   },
+  "hasMap": "https://www.google.com/maps?q=29.3759,47.9774",
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
     "opens": "00:00",
     "closes": "23:59"
   },
-  "areaServed": {
-    "@type": "Country",
-    "name": "Kuwait"
+  "areaServed": [
+    {"@type": "Country", "name": "Kuwait"},
+    {"@type": "AdministrativeArea", "name": "Capital"},
+    {"@type": "AdministrativeArea", "name": "Hawalli"},
+    {"@type": "AdministrativeArea", "name": "Farwaniya"},
+    {"@type": "AdministrativeArea", "name": "Jahra"},
+    {"@type": "AdministrativeArea", "name": "Ahmadi"},
+    {"@type": "AdministrativeArea", "name": "Mubarak Al-Kabeer"}
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+965-66714788",
+    "url": "https://wa.me/96566714788",
+    "availableLanguage": ["Arabic", "English"]
   },
   "sameAs": [
     "https://www.instagram.com/qsbtht/"
@@ -117,17 +136,18 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "قصاب متنقل الكويت",
-  "serviceType": "Mobile Butcher",
+  "@id": "https://www.kuwait-butcher.online/#service-delivery",
+  "name": "توصيل ذبائح ولحوم الكويت",
+  "serviceType": "Meat Delivery",
+  "url": "https://www.kuwait-butcher.online/delivery",
   "provider": {
-    "@type": "Butcher",
-    "name": "Qassab Al Kuwait"
+    "@id": "https://www.kuwait-butcher.online/#butcher"
   },
   "areaServed": {
     "@type": "Country",
     "name": "Kuwait"
   },
-  "description": "خدمة قصاب متنقل لجميع مناطق الكويت مع ذبح شرعي وتقطيع وتغليف وتوصيل 24 ساعة"
+  "description": "خدمة توصيل لحوم وذبائح طازجة إلى جميع مناطق الكويت بنقل مبرد على مدار 24 ساعة"
 }
 </script>
 
@@ -170,13 +190,13 @@
       "@type": "ListItem",
       "position": 1,
       "name": "الرئيسية",
-      "item": "https://www.qassabalkuwait.com/"
+      "item": "https://www.kuwait-butcher.online/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "توصيل ذبائح الكويت",
-      "item": "https://www.qassabalkuwait.com/delivery"
+      "item": "https://www.kuwait-butcher.online/delivery"
     }
   ]
 }
@@ -193,7 +213,7 @@
   <header>
     <div class="container nav-wrap">
       <a href="#top" class="logo" aria-label="قصاب الكويت">
-        <span class="logo-mark" aria-hidden="true">ق</span>
+        <img src="Icon.png" alt="قصاب الكويت" class="logo-mark">
         <span class="logo-text">
           <span class="brand-word" data-en="Qassab Al Kuwait">قصاب الكويت</span>
           <small data-en="Fresh Meat, Daily">لحم طازج، يوميًا</small>
@@ -210,7 +230,8 @@
       </nav>
 
       <div class="header-actions">
-        <a href="https://www.instagram.com/qsbtht/" class="lang-switch instgram-link" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;background-color:red;color:white;border-color:red;">
+        <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch to English">EN</button>
+        <a href="https://www.instagram.com/qsbtht/" class="instagram-link" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
           </svg>
@@ -265,7 +286,246 @@
           </p>
         </div>
 
-        <div id="areas-grid" class="articles-grid reveal"></div>
+        <div id="areas-grid" class="articles-grid reveal">
+          <div class="area-article" data-page="1">
+            <picture>
+              <source srcset="images/hero-1600.webp" type="image/webp">
+              <img src="derrick-pare-TdhqDEjeNuM-unsplash.jpg" alt="قصاب متنقل العاصمة" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Capital">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Capital">قصاب متنقل العاصمة</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Capital. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق العاصمة. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="1">
+            <picture>
+              <source srcset="images/area-gabriella-600.webp" type="image/webp">
+              <img src="gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" alt="قصاب متنقل حولي" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Hawalli">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Hawalli">قصاب متنقل حولي</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Hawalli. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق حولي. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="1">
+            <picture>
+              <source srcset="images/area-gettyimages-600.webp" type="image/webp">
+              <img src="_95787611_gettyimages-647011416.jpg" alt="قصاب متنقل السالمية" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Salmiya">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Salmiya">قصاب متنقل السالمية</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Salmiya. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق السالمية. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="1">
+            <picture>
+              <source srcset="images/area-sheep-600.webp" type="image/webp">
+              <img src="brown-headed-sheep-looking-at-the-preview-19727.jpg" alt="قصاب متنقل الفروانية" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Farwaniya">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Farwaniya">قصاب متنقل الفروانية</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Farwaniya. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق الفروانية. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="1">
+            <picture>
+              <source srcset="images/area-inigo-600.webp" type="image/webp">
+              <img src="inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" alt="قصاب متنقل الجهراء" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Jahra">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Jahra">قصاب متنقل الجهراء</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Jahra. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق الجهراء. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="1">
+            <picture>
+              <source srcset="images/area-madie-600.webp" type="image/webp">
+              <img src="madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" alt="قصاب متنقل الأحمدي" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Ahmadi">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Ahmadi">قصاب متنقل الأحمدي</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Ahmadi. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق الأحمدي. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="2">
+            <picture>
+              <source srcset="images/area-thapanee-600.webp" type="image/webp">
+              <img src="thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" alt="قصاب متنقل مبارك الكبير" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Mubarak Al-Kabeer">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Mubarak Al-Kabeer">قصاب متنقل مبارك الكبير</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Mubarak Al-Kabeer. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق مبارك الكبير. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="2">
+            <picture>
+              <source srcset="images/area-images1-600.webp" type="image/webp">
+              <img src="images.jfif" alt="قصاب متنقل صباح السالم" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Sabah Al-Salem">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Sabah Al-Salem">قصاب متنقل صباح السالم</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Sabah Al-Salem. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق صباح السالم. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="2">
+            <picture>
+              <source srcset="images/area-images2-600.webp" type="image/webp">
+              <img src="images (1).jfif" alt="قصاب متنقل جابر الأحمد" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Jaber Al-Ahmad">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Jaber Al-Ahmad">قصاب متنقل جابر الأحمد</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Jaber Al-Ahmad. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق جابر الأحمد. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="2">
+            <picture>
+              <source srcset="images/area-images3-600.webp" type="image/webp">
+              <img src="images (2).jfif" alt="قصاب متنقل النزهة" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Al-Nuzha">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Al-Nuzha">قصاب متنقل النزهة</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Al-Nuzha. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق النزهة. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="2">
+            <picture>
+              <source srcset="images/hero-1600.webp" type="image/webp">
+              <img src="derrick-pare-TdhqDEjeNuM-unsplash.jpg" alt="قصاب متنقل القادسية" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Al-Qadsia">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Al-Qadsia">قصاب متنقل القادسية</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Al-Qadsia. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق القادسية. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="2">
+            <picture>
+              <source srcset="images/area-gabriella-600.webp" type="image/webp">
+              <img src="gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" alt="قصاب متنقل الروضة" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Al-Rawda">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Al-Rawda">قصاب متنقل الروضة</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Al-Rawda. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق الروضة. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="3">
+            <picture>
+              <source srcset="images/area-gettyimages-600.webp" type="image/webp">
+              <img src="_95787611_gettyimages-647011416.jpg" alt="قصاب متنقل العديلية" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Al-Adailiya">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Al-Adailiya">قصاب متنقل العديلية</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Al-Adailiya. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق العديلية. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="3">
+            <picture>
+              <source srcset="images/area-sheep-600.webp" type="image/webp">
+              <img src="brown-headed-sheep-looking-at-the-preview-19727.jpg" alt="قصاب متنقل الدوحة" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Al-Doha">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Al-Doha">قصاب متنقل الدوحة</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Al-Doha. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق الدوحة. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="3">
+            <picture>
+              <source srcset="images/area-inigo-600.webp" type="image/webp">
+              <img src="inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" alt="قصاب متنقل ضاحية عبدالله السالم" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Abdullah Al-Salem">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Abdullah Al-Salem">قصاب متنقل ضاحية عبدالله السالم</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Abdullah Al-Salem. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق ضاحية عبدالله السالم. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="3">
+            <picture>
+              <source srcset="images/area-madie-600.webp" type="image/webp">
+              <img src="madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" alt="قصاب متنقل الصناعية" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Industrial Area">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Industrial Area">قصاب متنقل الصناعية</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Industrial Area. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق الصناعية. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+          <div class="area-article" data-page="3">
+            <picture>
+              <source srcset="images/area-thapanee-600.webp" type="image/webp">
+              <img src="thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" alt="قصاب متنقل الشويخ" loading="lazy" width="600" height="400" data-alt-en="Mobile Butcher Shuwaikh">
+            </picture>
+            <div class="area-content">
+              <h3 data-en="Mobile Butcher Shuwaikh">قصاب متنقل الشويخ</h3>
+              <p data-en="Fully equipped mobile butcher service covering all areas of Shuwaikh. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.">خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق الشويخ. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.</p>
+              <div class="area-actions">
+                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);" data-en="Call Now 66714788">اتصل الآن 66714788</a>
+                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener" data-en="WhatsApp">واتساب</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="pagination" class="pagination reveal"></div>
       </div>
     </section>
@@ -305,7 +565,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo" style="margin-bottom:1rem;">
-            <span class="logo-mark" aria-hidden="true">ق</span>
+            <img src="Icon.png" alt="قصاب الكويت" class="logo-mark">
             <span class="logo-text" style="color:var(--bone);">
               <span class="brand-word" data-en="Qassab Al Kuwait">قصاب الكويت</span>
             </span>
@@ -388,7 +648,7 @@
         });
 
         document.title = lang === 'ar'
-          ? 'قصاب الكويت | قصاب متنقل - ذبايح للبيع - ذبح وتوصيل 24 ساعة'
+          ? 'قصاب الكويت | قصاب متنقل - ذبائح للبيع - ذبح وتوصيل 24 ساعة'
           : 'Qassab Al Kuwait | Mobile Butcher - Livestock for Sale - Slaughter & Delivery 24 Hours';
       }
 
@@ -454,101 +714,37 @@
 
 <script>
   (function () {
-    const areas = [
-      { ar: "العاصمة", en: "Capital", img: "images/hero-1600.webp", fallback: "derrick-pare-TdhqDEjeNuM-unsplash.jpg" },
-      { ar: "حولي", en: "Hawalli", img: "images/area-gabriella-600.webp", fallback: "gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" },
-      { ar: "السالمية", en: "Salmiya", img: "images/area-gettyimages-600.webp", fallback: "_95787611_gettyimages-647011416.jpg" },
-      { ar: "الفروانية", en: "Farwaniya", img: "images/area-sheep-600.webp", fallback: "brown-headed-sheep-looking-at-the-preview-19727.jpg" },
-      { ar: "الجهراء", en: "Jahra", img: "images/area-inigo-600.webp", fallback: "inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" },
-      { ar: "الأحمدي", en: "Ahmadi", img: "images/area-madie-600.webp", fallback: "madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" },
-      { ar: "مبارك الكبير", en: "Mubarak Al-Kabeer", img: "images/area-thapanee-600.webp", fallback: "thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" },
-      { ar: "صباح السالم", en: "Sabah Al-Salem", img: "images/area-images1-600.webp", fallback: "images.jfif" },
-      { ar: "جابر الأحمد", en: "Jaber Al-Ahmad", img: "images/area-images2-600.webp", fallback: "images (1).jfif" },
-      { ar: "النزهة", en: "Al-Nuzha", img: "images/area-images3-600.webp", fallback: "images (2).jfif" },
-      { ar: "القادسية", en: "Al-Qadsia", img: "images/hero-1600.webp", fallback: "derrick-pare-TdhqDEjeNuM-unsplash.jpg" },
-      { ar: "الروضة", en: "Al-Rawda", img: "images/area-gabriella-600.webp", fallback: "gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" },
-      { ar: "العديلية", en: "Al-Adailiya", img: "images/area-gettyimages-600.webp", fallback: "_95787611_gettyimages-647011416.jpg" },
-      { ar: "الدوحة", en: "Al-Doha", img: "images/area-sheep-600.webp", fallback: "brown-headed-sheep-looking-at-the-preview-19727.jpg" },
-      { ar: "ضاحية عبدالله السالم", en: "Abdullah Al-Salem", img: "images/area-inigo-600.webp", fallback: "inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" },
-      { ar: "الصناعية", en: "Industrial Area", img: "images/area-madie-600.webp", fallback: "madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" },
-      { ar: "الشويخ", en: "Shuwaikh", img: "images/area-thapanee-600.webp", fallback: "thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" }
-    ];
-
     const itemsPerPage = 6;
+    const totalPages = 3;
     let currentPage = 1;
+    const grid = document.getElementById('areas-grid');
+    const cards = grid.querySelectorAll('.area-article');
 
-    function renderArticles() {
-      const grid = document.getElementById('areas-grid');
-      const lang = document.documentElement.getAttribute('lang') || 'ar';
-      grid.innerHTML = '';
-      
-      const start = (currentPage - 1) * itemsPerPage;
-      const end = start + itemsPerPage;
-      const paginatedItems = areas.slice(start, end);
-
-      paginatedItems.forEach(area => {
-        const title = lang === 'ar' ? `قصاب متنقل ${area.ar}` : `Mobile Butcher ${area.en}`;
-        const desc = lang === 'ar' 
-          ? `خدمة قصاب متنقل مجهزة بالكامل تغطي جميع مناطق ${area.ar}. ذبح حلال، تقطيع، وتغليف بأعلى معايير النظافة والجودة.`
-          : `Fully equipped mobile butcher service covering all areas of ${area.en}. Halal slaughter, cutting, and packaging with the highest standards of cleanliness and quality.`;
-        const callText = lang === 'ar' ? 'اتصل الآن' : 'Call Now';
-        const waText = lang === 'ar' ? 'واتساب' : 'WhatsApp';
-
-        const articleHTML = `
-          <div class="area-article">
-            <picture>
-              <source srcset="${area.img}" type="image/webp">
-              <img src="${area.fallback}" alt="${title}" loading="lazy" width="600" height="400">
-            </picture>
-            <div class="area-content">
-              <h3>${title}</h3>
-              <p>${desc}</p>
-              <div class="area-actions">
-                <a href="tel:+96566714788" class="btn btn-primary" onclick="return gtag_report_conversion(this.href);">${callText} 66714788</a>
-                <a href="https://wa.me/96566714788" class="btn btn-outline" target="_blank" rel="noopener">${waText}</a>
-              </div>
-            </div>
-          </div>
-        `;
-        grid.insertAdjacentHTML('beforeend', articleHTML);
+    function showPage(page) {
+      currentPage = page;
+      cards.forEach(function (card) {
+        card.style.display = card.getAttribute('data-page') == page ? '' : 'none';
       });
+      renderPagination();
     }
 
     function renderPagination() {
-      const pagination = document.getElementById('pagination');
+      var pagination = document.getElementById('pagination');
       pagination.innerHTML = '';
-      const totalPages = Math.ceil(areas.length / itemsPerPage);
-
       if (totalPages <= 1) return;
-
-      for (let i = 1; i <= totalPages; i++) {
-        const btn = document.createElement('button');
-        btn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
+      for (var i = 1; i <= totalPages; i++) {
+        var btn = document.createElement('button');
+        btn.className = 'page-btn' + (i === currentPage ? ' active' : '');
         btn.innerText = i;
-        btn.addEventListener('click', () => {
-          currentPage = i;
-          renderArticles();
-          renderPagination();
+        btn.addEventListener('click', function () {
+          showPage(parseInt(this.innerText));
           document.getElementById('areas').scrollIntoView({ behavior: 'smooth' });
         });
         pagination.appendChild(btn);
       }
     }
 
-    // Initial render
-    renderArticles();
-    renderPagination();
-
-    // Re-render when language changes
-    const langBtn = document.getElementById('langSwitch');
-    if (langBtn) {
-      langBtn.addEventListener('click', () => {
-        // give it a short timeout to let the global lang change apply
-        setTimeout(() => {
-          renderArticles();
-        }, 50);
-      });
-    }
+    showPage(1);
   })();
 </script>
 </body>

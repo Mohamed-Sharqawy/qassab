@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.qassabalkuwait.com/sitemap.xml
+Sitemap: https://www.kuwait-butcher.online/sitemap.xml
+
+# LLMs
+Allow: /llms.txt

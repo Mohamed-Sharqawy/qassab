@@ -1,0 +1,47 @@
+Qassab Al Kuwait — Visual Identity (Colors)
+=============================================
+
+BRAND COLORS
+------------
+Primary Red:        #e00000
+Primary Hover:      #404040 (Dark Gray)
+
+CTA Green:          #009900
+CTA Hover:          #dd3333 (Red)
+
+Theme Color:        #FF5F6D (Coral Red — used for browser theme)
+
+
+LOGO GRADIENT
+-------------
+Gradient Start:     #FF5F6D (Coral Red)
+Gradient End:       #FFC371 (Warm Orange)
+Logo Letter:        #FFFFFF (White)
+
+
+BACKGROUNDS
+-----------
+Main Background:    #ffffff (White)
+Header Background:  #ededed (Light Gray)
+Item Background:    #f0f0f0 (Light Gray)
+Score Background:   #f2f2f2 (Light Gray)
+Body Background:    #ffffff (White)
+
+
+TEXT COLORS
+-----------
+Main Text:          #222222 (Dark Gray)
+Gray Text:          #505050 (Medium Gray)
+Light Text:         #777777 (Light Gray)
+Widget Text:        #5d2e8f (Purple)
+
+
+BORDERS
+-------
+Border Color:       #cccccc (Light Gray)
+
+
+DESIGN TOKENS
+-------------
+Border Radius:      4px
+Container Width:    1180px

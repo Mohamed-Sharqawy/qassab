@@ -185,13 +185,8 @@ header {
 .logo-mark {
   width: 40px;
   height: 40px;
-  background: var(--primary);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
   border-radius: 4px;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -227,6 +222,18 @@ nav.primary-nav a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  transition: color 0.2s;
+}
+
+.instagram-link:hover {
+  color: var(--primary);
 }
 
 .lang-switch {
@@ -553,6 +560,15 @@ nav.primary-nav a:hover {
 }
 
 /* FAQ */
+.faq {
+  padding-block: 4rem 2rem;
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .faq-item {
   border: 1px solid var(--border-color);
   background: var(--bg-item);
