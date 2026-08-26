@@ -29,7 +29,7 @@
     },
     {
       "source": "/favicon.ico",
-      "destination": "/Icon.png",
+      "destination": "/icon-512.png",
       "permanent": false
     }
   ]
