@@ -26,6 +26,11 @@
       "source": "/butcher.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/Icon.png",
+      "permanent": false
     }
   ]
 }
