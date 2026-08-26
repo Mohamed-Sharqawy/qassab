@@ -71,19 +71,9 @@
   <!-- Performance: connect early to the origins we actually fetch from -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://commons.wikimedia.org">
-  <link rel="preconnect" href="https://upload.wikimedia.org">
-  <link rel="dns-prefetch" href="https://upload.wikimedia.org">
 
-  <!-- Preload the LCP hero image -->
-  <link rel="preload" as="image"
-    href="derrick-pare-TdhqDEjeNuM-unsplash.jpg"
-    fetchpriority="high">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>@import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');</style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/droidarabickufi.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="style.css">
 
   <!-- JSON-LD structured data: LocalBusiness / Butcher shop -->
@@ -543,23 +533,23 @@
 <script>
   (function () {
     const areas = [
-      { ar: "العاصمة", en: "Capital", img: "derrick-pare-TdhqDEjeNuM-unsplash.jpg" },
-      { ar: "حولي", en: "Hawalli", img: "gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" },
-      { ar: "السالمية", en: "Salmiya", img: "_95787611_gettyimages-647011416.jpg" },
-      { ar: "الفروانية", en: "Farwaniya", img: "brown-headed-sheep-looking-at-the-preview-19727.jpg" },
-      { ar: "الجهراء", en: "Jahra", img: "inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" },
-      { ar: "الأحمدي", en: "Ahmadi", img: "madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" },
-      { ar: "مبارك الكبير", en: "Mubarak Al-Kabeer", img: "thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" },
-      { ar: "صباح السالم", en: "Sabah Al-Salem", img: "images.jfif" },
-      { ar: "جابر الأحمد", en: "Jaber Al-Ahmad", img: "images (1).jfif" },
-      { ar: "النزهة", en: "Al-Nuzha", img: "images (2).jfif" },
-      { ar: "القادسية", en: "Al-Qadsia", img: "derrick-pare-TdhqDEjeNuM-unsplash.jpg" },
-      { ar: "الروضة", en: "Al-Rawda", img: "gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" },
-      { ar: "العديلية", en: "Al-Adailiya", img: "_95787611_gettyimages-647011416.jpg" },
-      { ar: "الدوحة", en: "Al-Doha", img: "brown-headed-sheep-looking-at-the-preview-19727.jpg" },
-      { ar: "ضاحية عبدالله السالم", en: "Abdullah Al-Salem", img: "inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" },
-      { ar: "الصناعية", en: "Industrial Area", img: "madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" },
-      { ar: "الشويخ", en: "Shuwaikh", img: "thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" }
+      { ar: "العاصمة", en: "Capital", img: "images/hero-1600.webp", fallback: "derrick-pare-TdhqDEjeNuM-unsplash.jpg" },
+      { ar: "حولي", en: "Hawalli", img: "images/area-gabriella-600.webp", fallback: "gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" },
+      { ar: "السالمية", en: "Salmiya", img: "images/area-gettyimages-600.webp", fallback: "_95787611_gettyimages-647011416.jpg" },
+      { ar: "الفروانية", en: "Farwaniya", img: "images/area-sheep-600.webp", fallback: "brown-headed-sheep-looking-at-the-preview-19727.jpg" },
+      { ar: "الجهراء", en: "Jahra", img: "images/area-inigo-600.webp", fallback: "inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" },
+      { ar: "الأحمدي", en: "Ahmadi", img: "images/area-madie-600.webp", fallback: "madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" },
+      { ar: "مبارك الكبير", en: "Mubarak Al-Kabeer", img: "images/area-thapanee-600.webp", fallback: "thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" },
+      { ar: "صباح السالم", en: "Sabah Al-Salem", img: "images/area-images1-600.webp", fallback: "images.jfif" },
+      { ar: "جابر الأحمد", en: "Jaber Al-Ahmad", img: "images/area-images2-600.webp", fallback: "images (1).jfif" },
+      { ar: "النزهة", en: "Al-Nuzha", img: "images/area-images3-600.webp", fallback: "images (2).jfif" },
+      { ar: "القادسية", en: "Al-Qadsia", img: "images/hero-1600.webp", fallback: "derrick-pare-TdhqDEjeNuM-unsplash.jpg" },
+      { ar: "الروضة", en: "Al-Rawda", img: "images/area-gabriella-600.webp", fallback: "gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" },
+      { ar: "العديلية", en: "Al-Adailiya", img: "images/area-gettyimages-600.webp", fallback: "_95787611_gettyimages-647011416.jpg" },
+      { ar: "الدوحة", en: "Al-Doha", img: "images/area-sheep-600.webp", fallback: "brown-headed-sheep-looking-at-the-preview-19727.jpg" },
+      { ar: "ضاحية عبدالله السالم", en: "Abdullah Al-Salem", img: "images/area-inigo-600.webp", fallback: "inigo-de-la-maza-LQJg_PXPPUs-unsplash.jpg" },
+      { ar: "الصناعية", en: "Industrial Area", img: "images/area-madie-600.webp", fallback: "madie-hamilton-l9vXx8aEYJ8-unsplash.jpg" },
+      { ar: "الشويخ", en: "Shuwaikh", img: "images/area-thapanee-600.webp", fallback: "thapanee-srisawat-ahnczgYo2Fo-unsplash.jpg" }
     ];
 
     const itemsPerPage = 6;
@@ -584,7 +574,10 @@
 
         const articleHTML = `
           <div class="area-article">
-            <img src="${area.img}" alt="${title}" loading="lazy">
+            <picture>
+              <source srcset="${area.img}" type="image/webp">
+              <img src="${area.fallback}" alt="${title}" loading="lazy" width="600" height="400">
+            </picture>
             <div class="area-content">
               <h3>${title}</h3>
               <p>${desc}</p>
