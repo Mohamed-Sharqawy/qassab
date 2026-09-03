@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  // Allow CORS if needed
+  // Allow CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -33,9 +33,19 @@ export default async function handler(req, res) {
     const isMobile = /mobile|iphone|android|ipad/i.test(userAgent);
     const deviceType = isMobile ? '📱 موبايل' : '💻 كمبيوتر';
 
-    // Check if traffic is from Google Ads (gclid, gbraid, wbraid, or utm)
+    // 4. Detect Google Ads Crawler / Bot vs Real Human Clicks
+    const isGoogleBot = ip.startsWith('66.249.') || 
+                        /Googlebot|AdsBot-Google|Mediapartners-Google|Google-Safety|Google-Read-Aloud|FeedFetcher-Google/i.test(userAgent);
+
     const gclid = body.gclid || '';
-    const isAd = Boolean(gclid || body.is_ad || body.utm_source === 'google' || body.utm_medium === 'cpc');
+    const hasAdParam = Boolean(gclid || body.is_ad || body.utm_source === 'google' || body.utm_medium === 'cpc');
+
+    let visitType = 'زيارة عادية (Organic)';
+    if (isGoogleBot) {
+      visitType = '🤖 روبوت فحص جوجل (مجاني)';
+    } else if (hasAdParam) {
+      visitType = '🚨 نقرة إعلان مدفوعة (Google Ads)';
+    }
 
     // Current Time in Kuwait (Asia/Kuwait)
     const kuwaitTime = new Date().toLocaleString('ar-EG', {
@@ -54,14 +64,15 @@ export default async function handler(req, res) {
       time: kuwaitTime,
       city: region ? `${city} (${region})` : city,
       country: country,
-      is_ad: isAd,
-      gclid: gclid || (isAd ? 'Google Ad Click' : '-'),
+      is_ad: hasAdParam && !isGoogleBot,
+      visit_type: visitType,
+      gclid: isGoogleBot ? 'فحص تلقائي (Bot Verification)' : (gclid || (hasAdParam ? 'Google Ad Click' : '-')),
       page: body.page || '/',
-      device: `${deviceType} - ${body.screen || ''}`,
+      device: isGoogleBot ? '🤖 Google Bot (US)' : `${deviceType} - ${body.screen || ''}`,
       referrer: body.referrer || req.headers['referer'] || '-'
     };
 
-    // 4. Send to Google Sheets Apps Script Webhook asynchronously
+    // 5. Send to Google Sheets Apps Script Webhook asynchronously
     if (GOOGLE_SCRIPT_URL) {
       await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
@@ -75,7 +86,7 @@ export default async function handler(req, res) {
       ip: ip,
       city: city,
       country: country,
-      is_ad: isAd
+      visitType: visitType
     });
   } catch (error) {
     console.error('Tracker Error:', error);
